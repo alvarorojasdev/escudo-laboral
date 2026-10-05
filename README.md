@@ -62,4 +62,4 @@ Más en `package.json`: `evals:control`, `evals:ranking`, `evals:autoevaluacion`
 
 ## Autor
 
-Diseñado y desarrollado por [Álvaro Rojas](https://github.com/alvarorojasdev).
+Diseñado y desarrollado por [Alvaro Rojas](https://github.com/alvarorojasdev).
