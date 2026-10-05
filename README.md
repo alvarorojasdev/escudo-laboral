@@ -4,6 +4,19 @@ Plataforma web para que micro y pequeñas empresas de Colombia implementen el **
 
 **Sitio:** [escudo-laboral.vercel.app](https://escudo-laboral.vercel.app/)
 
+![Portada de Escudo Laboral](docs/capturas/inicio.png)
+
+## Andrea, la asistente con IA
+
+Responde citando la norma que consultó. Ejemplo real: plazo para reportar un accidente de trabajo.
+
+![Andrea respondiendo con cita del Decreto 1295 de 1994](docs/capturas/andrea.png)
+
+<p align="center">
+  <img src="docs/capturas/autoevaluacion.png" alt="Autoevaluación de estándares mínimos" width="66%">
+  <img src="docs/capturas/movil.png" alt="Vista en celular" width="28%">
+</p>
+
 ## Qué hace
 
 - **Andrea, asistente con IA:** responde dudas de SG-SST citando la norma real. Busca en un corpus propio de 12 normas (246 artículos) incluido en el código y no puede citar nada que no haya consultado.
