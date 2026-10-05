@@ -1,0 +1,285 @@
+import type { ArticuloNormativo } from './tipos'
+
+const NORMA = 'Ley 1010 de 2006'
+
+/**
+ * Ley 1010 de 2006 (23 de enero de 2006, Diario Oficial 46.160): adopta medidas
+ * para prevenir, corregir y sancionar el acoso laboral y otros hostigamientos
+ * en el marco de las relaciones de trabajo.
+ *
+ * FUENTE DEL TEXTO
+ * Texto consolidado (con modificaciones posteriores ya aplicadas y apartes
+ * inexequibles señalados) del Gestor Normativo "Alejandría", que reproduce la
+ * compilación del Senado:
+ *   https://gestornormativo.creg.gov.co/gestor/entorno/docs/ley_1010_2006.htm
+ * Contrastado artículo por artículo contra el Gestor Normativo de Función
+ * Pública: https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=18843
+ *
+ * MODIFICACIONES VIGENTES INCORPORADAS
+ * - Art. 2 num. 3 (discriminación laboral): texto modificado por el art. 74 de
+ *   la Ley 1622 de 2013, que agregó la "edad" como razón de trato diferenciado.
+ *   Se usa el texto nuevo.
+ * - Art. 9 parágrafo 1: texto corregido por el art. 1 del Decreto 231 de 2006.
+ *   El plazo correcto es de tres (3) meses (el texto original decía "tres (4)").
+ * - Art. 9: el último numeral (numerado "10" en la ley modificatoria, lo que es
+ *   un error de numeración marcado como <sic> en las compilaciones oficiales)
+ *   fue ADICIONADO por el art. 16 de la Ley 2365 de 2024. Hoy hace parte del
+ *   art. 9 de esta ley, por eso se incluye aquí.
+ * - Art. 18 (caducidad): modificado por el art. 1 de la Ley 2209 de 2022. La
+ *   caducidad pasó de seis (6) meses a tres (3) años. Se usa el texto nuevo.
+ *
+ * APARTES DECLARADOS INEXEQUIBLES — NO SE INCLUYEN
+ * - Art. 3 literal f) ("Los vínculos familiares y afectivos"): declarado
+ *   INEXEQUIBLE por la Corte Constitucional, Sentencia C-898 de 2006. Por eso
+ *   el listado de atenuantes salta de e) a g): así queda el artículo vigente.
+ * - Art. 14: la expresión "los cuales se descontarán sucesivamente de la
+ *   remuneración que el quejoso devengue, durante los seis (6) meses siguientes
+ *   a su imposición" fue declarada INEXEQUIBLE por la Sentencia C-738 de 2006
+ *   (el resto del artículo quedó exequible). Se omite esa expresión y la coma
+ *   que la precedía se cierra en punto; no se altera ninguna otra palabra.
+ *
+ * EXEQUIBILIDAD CONDICIONADA A TENER EN CUENTA AL CITAR
+ * - Art. 1 parágrafo: el aparte que excluye los contratos de prestación de
+ *   servicios sin jerarquía ni subordinación fue declarado EXEQUIBLE por la
+ *   Sentencia C-960 de 2007, pero "en el entendido de que si en realidad existe
+ *   una relación laboral, se aplicará la Ley 1010 de 2006". Es decir: la
+ *   exclusión no opera cuando el contrato civil encubre una relación laboral
+ *   real.
+ * - Art. 3 literal e) ("de inferioridad"): exequible, Sentencia C-078 de 2007.
+ * - Art. 7 ("repetida y pública"): exequible, Sentencia C-780 de 2007.
+ * - Art. 9 num. 1 y 2 y parágrafo 1: exequibles, Sentencia C-282 de 2007.
+ *
+ * ARTÍCULOS OMITIDOS Y POR QUÉ
+ * Se incluyen los artículos con impacto directo en micro y pequeñas empresas
+ * del sector privado. Se omiten: el 5 (graduación de faltas, remite al Código
+ * Disciplinario Único), el 15 (llamamiento en garantía en procesos de nulidad y
+ * restablecimiento del derecho), el 16 (suspensión de la evaluación del
+ * desempeño) y el 17 (sujetos procesales en la actuación disciplinaria), por
+ * ser propios del sector público o del trámite contencioso, y el 19 (vigencia y
+ * derogatoria).
+ *
+ * NOTA DE ALCANCE
+ * El Comité de Convivencia Laboral NO está regulado por esta ley: lo reglamenta
+ * la Resolución 652 de 2012. Esta ley solo exige, en su art. 9 num. 1, que el
+ * reglamento de trabajo prevea un mecanismo de prevención y un procedimiento
+ * interno, confidencial, conciliatorio y efectivo.
+ */
+export const LEY_1010_2006: ArticuloNormativo[] = [
+  {
+    norma: NORMA,
+    articulo: '1',
+    titulo:
+      'Objeto de la ley y bienes protegidos por ella (el parágrafo fue declarado exequible de forma CONDICIONADA por la Sentencia C-960 de 2007: si en realidad existe una relación laboral, la Ley 1010 sí se aplica, aunque el contrato se llame de prestación de servicios)',
+    texto:
+      'La presente ley tiene por objeto definir, prevenir, corregir y sancionar las diversas formas de agresión, maltrato, vejámenes, trato desconsiderado y ofensivo y en general todo ultraje a la dignidad humana que se ejercen sobre quienes realizan sus actividades económicas en el contexto de una relación laboral privada o pública. Son bienes jurídicos protegidos por la presente ley: el trabajo en condiciones dignas y justas, la libertad, la intimidad, la honra y la salud mental de los trabajadores, empleados, la armonía entre quienes comparten un mismo ambiente laboral y el buen ambiente en la empresa. PARÁGRAFO: La presente ley no se aplicará en el ámbito de las relaciones civiles y/o comerciales derivadas de los contratos de prestación de servicios en los cuales no se presenta una relación de jerarquía o subordinación. Tampoco se aplica a la contratación administrativa.',
+    temas: [
+      'para que sirve la ley de acoso laboral',
+      'ley 1010',
+      'objeto de la ley',
+      'a quien aplica',
+      'aplica a contratistas',
+      'prestacion de servicios',
+      'dignidad en el trabajo',
+    ],
+  },
+  {
+    norma: NORMA,
+    articulo: '2',
+    titulo: 'Definición y modalidades de acoso laboral',
+    texto:
+      'Para efectos de la presente ley se entenderá por acoso laboral toda conducta persistente y demostrable, ejercida sobre un empleado, trabajador por parte de un empleador, un jefe o superior jerárquico inmediato o mediato, un compañero de trabajo o un subalterno, encaminada a infundir miedo, intimidación, terror y angustia, a causar perjuicio laboral, generar desmotivación en el trabajo, o inducir la renuncia del mismo. En el contexto del inciso primero de este artículo, el acoso laboral puede darse, entre otras, bajo las siguientes modalidades generales: 1. Maltrato laboral. Todo acto de violencia contra la integridad física o moral, la libertad física o sexual y los bienes de quien se desempeñe como empleado o trabajador; toda expresión verbal injuriosa o ultrajante que lesione la integridad moral o los derechos a la intimidad y al buen nombre de quienes participen en una relación de trabajo de tipo laboral o todo comportamiento tendiente a menoscabar la autoestima y la dignidad de quien participe en una relación de trabajo de tipo laboral. 2. Persecución laboral: toda conducta cuyas características de reiteración o evidente arbitrariedad permitan inferir el propósito de inducir la renuncia del empleado o trabajador, mediante la descalificación, la carga excesiva de trabajo y cambios permanentes de horario que puedan producir desmotivación laboral. 3. Discriminación laboral: todo trato diferenciado por razones de raza, género, edad, origen familiar o nacional, credo religioso, preferencia política o situación social que carezca de toda razonabilidad desde el punto de vista laboral. 4. Entorpecimiento laboral: toda acción tendiente a obstaculizar el cumplimiento de la labor o hacerla más gravosa o retardarla con perjuicio para el trabajador o empleado. Constituyen acciones de entorpecimiento laboral, entre otras, la privación, ocultación o inutilización de los insumos, documentos o instrumentos para la labor, la destrucción o pérdida de información, el ocultamiento de correspondencia o mensajes electrónicos. 5. Inequidad laboral: Asignación de funciones a menosprecio del trabajador. 6. Desprotección laboral: Toda conducta tendiente a poner en riesgo la integridad y la seguridad del trabajador mediante órdenes o asignación de funciones sin el cumplimiento de los requisitos mínimos de protección y seguridad para el trabajador.',
+    temas: [
+      'que es acoso laboral',
+      'definicion de acoso laboral',
+      'tipos de acoso laboral',
+      'maltrato',
+      'persecucion laboral',
+      'discriminacion',
+      'me sobrecargan de trabajo',
+      'me quieren hacer renunciar',
+    ],
+  },
+  {
+    norma: NORMA,
+    articulo: '3',
+    titulo: 'Conductas atenuantes',
+    texto:
+      'Son conductas atenuantes del acoso laboral: a) Haber observado buena conducta anterior. b) Obrar en estado de emoción o pasión excusable, o temor intenso, o en estado de ira e intenso dolor. c) Procurar voluntariamente, después de realizada la conducta, disminuir o anular sus consecuencias. d) Reparar, discrecionalmente, el daño ocasionado, aunque no sea en forma total. e) Las condiciones de inferioridad síquicas determinadas por la edad o por circunstancias orgánicas que hayan influido en la realización de la conducta. g) Cuando existe manifiesta o velada provocación o desafío por parte del superior, compañero o subalterno. h) Cualquier circunstancia de análoga significación a las anteriores. PARÁGRAFO. El estado de emoción o pasión excusable, no se tendrá en cuenta en el caso de violencia contra la libertad sexual.',
+    temas: [
+      'atenuantes',
+      'que rebaja la sancion',
+      'me pueden perdonar',
+      'si pido disculpas',
+      'si reparo el dano',
+      'circunstancias a favor',
+    ],
+  },
+  {
+    norma: NORMA,
+    articulo: '4',
+    titulo: 'Circunstancias agravantes',
+    texto:
+      'Son circunstancias agravantes: a) Reiteración de la conducta; b) Cuando exista concurrencia de causales; c) Realizar la conducta por motivo abyecto, fútil o mediante precio, recompensa o promesa remuneratoria, d) Mediante ocultamiento, o aprovechando las condiciones de tiempo, modo y lugar, que dificulten la defensa del ofendido, o la identificación del autor partícipe; e) Aumentar deliberada e inhumanamente el daño psíquico y biológico causado al sujeto pasivo; f) La posición predominante que el autor ocupe en la sociedad, por su cargo, rango económico, ilustración, poder, oficio o dignidad; g) Ejecutar la conducta valiéndose de un tercero o de un inimputable; h) Cuando en la conducta desplegada por el sujeto activo se causa un daño en la salud física o psíquica al sujeto pasivo.',
+    temas: [
+      'agravantes',
+      'que empeora la sancion',
+      'si lo hago varias veces',
+      'si el jefe es el que acosa',
+      'dano a la salud del trabajador',
+      'circunstancias en contra',
+    ],
+  },
+  {
+    norma: NORMA,
+    articulo: '6',
+    titulo: 'Sujetos y ámbito de aplicación de la ley',
+    texto:
+      'Pueden ser sujetos activos o autores del acoso laboral: La persona natural que se desempeñe como gerente, jefe, director, supervisor o cualquier otra posición de dirección y mando en una empresa u organización en la cual haya relaciones laborales regidas por el Código Sustantivo del Trabajo; La persona natural que se desempeñe como superior jerárquico o tenga la calidad de jefe de una dependencia estatal; La persona natural que se desempeñe como trabajador o empleado. Son sujetos pasivos o víctimas del acoso laboral; Los trabajadores o empleados vinculados a una relación laboral de trabajo en el sector privado; Los servidores públicos, tanto empleados públicos como trabajadores oficiales y servidores con régimen especial que se desempeñen en una dependencia pública; Los jefes inmediatos cuando el acoso provenga de sus subalternos. Son sujetos partícipes del acoso laboral: La persona natural que como empleador promueva, induzca o favorezca el acoso laboral; La persona natural que omita cumplir los requerimientos o amonestaciones que se profieran por los Inspectores de Trabajo en los términos de la presente ley. PARÁGRAFO: Las situaciones de acoso laboral que se corrigen y sancionan en la presente ley son sólo aquellas que ocurren en un ámbito de relaciones de dependencia o subordinación de carácter laboral.',
+    temas: [
+      'quien puede acosar',
+      'quien puede ser victima',
+      'un companero puede acosar',
+      'un empleado puede acosar al jefe',
+      'a quien cubre la ley',
+      'responsabilidad del empleador',
+    ],
+  },
+  {
+    norma: NORMA,
+    articulo: '7',
+    titulo: 'Conductas que constituyen acoso laboral',
+    texto:
+      'Se presumirá que hay acoso laboral si se acredita la ocurrencia repetida y pública de cualquiera de las siguientes conductas: a) Los actos de agresión física, independientemente de sus consecuencias; b) Las expresiones injuriosas o ultrajantes sobre la persona, con utilización de palabras soeces o con alusión a la raza, el género, el origen familiar o nacional, la preferencia política o el estatus social; c) Los comentarios hostiles y humillantes de descalificación profesional expresados en presencia de los compañeros de trabajo; d) Las injustificadas amenazas de despido expresadas en presencia de los compañeros de trabajo; e) Las múltiples denuncias disciplinarias de cualquiera de los sujetos activos del acoso, cuya temeridad quede demostrada por el resultado de los respectivos procesos disciplinarios; f) La descalificación humillante y en presencia de los compañeros de trabajo de las propuestas u opiniones de trabajo; g) las burlas sobre la apariencia física o la forma de vestir, formuladas en público; h) La alusión pública a hechos pertenecientes a la intimidad de la persona; i) La imposición de deberes ostensiblemente extraños a las obligaciones laborales, las exigencias abiertamente desproporcionadas sobre el cumplimiento de la labor encomendada y el brusco cambio del lugar de trabajo o de la labor contratada sin ningún fundamento objetivo referente a la necesidad técnica de la empresa; j) La exigencia de laborar en horarios excesivos respecto a la jornada laboral contratada o legalmente establecida, los cambios sorpresivos del turno laboral y la exigencia permanente de laborar en dominicales y días festivos sin ningún fundamento objetivo en las necesidades de la empresa, o en forma discriminatoria respecto a los demás trabajadores o empleados; k) El trato notoriamente discriminatorio respecto a los demás empleados en cuanto al otorgamiento de derechos y prerrogativas laborales y la imposición de deberes laborales; l) La negativa a suministrar materiales e información absolutamente indispensables para el cumplimiento de la labor; m) La negativa claramente injustificada a otorgar permisos, licencias por enfermedad, licencias ordinarias y vacaciones, cuando se dan las condiciones legales, reglamentarias o convencionales para pedirlos; n) El envío de anónimos, llamadas telefónicas y mensajes virtuales con contenido injurioso, ofensivo o intimidatorio o el sometimiento a una situación de aislamiento social. En los demás casos no enumerados en este artículo, la autoridad competente valorará, según las circunstancias del caso y la gravedad de las conductas denunciadas, la ocurrencia del acoso laboral descrito en el artículo 2. Excepcionalmente un sólo acto hostil bastará para acreditar el acoso laboral. La autoridad competente apreciará tal circunstancia, según la gravedad de la conducta denunciada y su capacidad de ofender por sí sola la dignidad humana, la vida e integridad física, la libertad sexual y demás derechos fundamentales. Cuando las conductas descritas en este artículo tengan ocurrencias en privado, deberán ser demostradas por los medios de prueba reconocidos en la ley procesal civil.',
+    temas: [
+      'que cuenta como acoso',
+      'esto es acoso o no',
+      'mi jefe me grita',
+      'me humillan delante de todos',
+      'me amenazan con despedirme',
+      'me hacen trabajar domingos',
+      'no me dan vacaciones',
+      'una sola vez cuenta',
+    ],
+  },
+  {
+    norma: NORMA,
+    articulo: '8',
+    titulo: 'Conductas que no constituyen acoso laboral',
+    texto:
+      'No constituyen acoso laboral bajo ninguna de sus modalidades: a) Las exigencias y órdenes, necesarias para mantener la disciplina en los cuerpos que componen las Fuerzas Pública conforme al principio constitucional de obediencia debida; b) Los actos destinados a ejercer la potestad disciplinaria que legalmente corresponde a los superiores jerárquicos sobre sus subalternos; c) La formulación de exigencias razonables de fidelidad laboral o lealtad empresarial e institucional; d) La formulación de circulares o memorandos de servicio encaminados a solicitar exigencias técnicas o mejorar la eficiencia laboral y la evaluación laboral de subalternos conforme a indicadores objetivos y generales de rendimiento; e) La solicitud de cumplir deberes extras de colaboración con la empresa o la institución, cuando sean necesarios para la continuidad del servicio o para solucionar situaciones difíciles en la operación de la empresa o la institución; f) Las actuaciones administrativas o gestiones encaminadas a dar por terminado el contrato de trabajo, con base en una causa legal o una justa causa, prevista en el Código Sustantivo del Trabajo o en la legislación sobre la función pública. g) La solicitud de cumplir los deberes de la persona y el ciudadano, de que trata el artículo 95 de la Constitución. h) La exigencia de cumplir las obligaciones o deberes de que tratan los artículos 55 a 57 del C.S.T, así como de no incurrir en las prohibiciones de que tratan los artículo 59 y 60 del mismo Código. i) Las exigencias de cumplir con las estipulaciones contenidas en los reglamentos y cláusulas de los contratos de trabajo. j) La exigencia de cumplir con las obligaciones, deberes y prohibiciones de que trata la legislación disciplinaria aplicable a los servidores públicos. PARÁGRAFO. Las exigencias técnicas, los requerimientos de eficiencia y las peticiones de colaboración a que se refiere este artículo deberán ser justificados, fundados en criterios objetivos y no discriminatorios.',
+    temas: [
+      'que no es acoso laboral',
+      'puedo exigirle a mi empleado',
+      'llamado de atencion es acoso',
+      'si le pido mas rendimiento',
+      'evaluacion de desempeno',
+      'despedir es acoso',
+      'esto es acoso o no',
+    ],
+  },
+  {
+    norma: NORMA,
+    articulo: '9',
+    titulo: 'Medidas preventivas y correctivas del acoso laboral',
+    texto:
+      '1. Los reglamentos de trabajo de las empresas e instituciones deberán prever mecanismos de prevención de las conductas de acoso laboral y establecer un procedimiento interno, confidencial, conciliatorio y efectivo para superar las que ocurran en el lugar de trabajo. Los comités de empresa de carácter bipartito, donde existan, podrán asumir funciones relacionados con acoso laboral en los reglamentos de trabajo. 2. La víctima del acoso laboral podrá poner en conocimiento del Inspector de Trabajo con competencia en el lugar de los hechos, de los Inspectores Municipales de Policía, de los Personeros Municipales o de la Defensoría del Pueblo, a prevención, la ocurrencia de una situación continuada y ostensible de acoso laboral. La denuncia deberá dirigirse por escrito en que se detallen los hechos denunciados y al que se anexa prueba sumaria de los mismos. La autoridad que reciba la denuncia en tales términos conminará preventivamente al empleador para que ponga en marcha los procedimientos confidenciales referidos en el numeral 1 de este artículo y programe actividades pedagógicas o terapias grupales de mejoramiento de las relaciones entre quienes comparten una relación laboral dentro de una empresa. Para adoptar esta medida se escuchará a la parte denunciada. 3. Quien se considere víctima de una conducta de acoso laboral bajo alguna de las modalidades descritas en el artículo 2 de la presente ley podrá solicitar la intervención de una institución de conciliación autorizada legalmente a fin de que amigablemente se supere la situación de acoso laboral. 10. Ante la ocurrencia de actos de presunto acoso sexual en el contexto laboral, sin importar el tipo de vinculación, el empleador o contratante del sector público o privado deberá implementar una campaña inmediata de acción colectiva orientada a la transformación del ambiente laboral en un espacio de igualdad y libre de violencias. PARÁGRAFO 1. Los empleadores deberán adaptar el reglamento de trabajo a los requerimientos de la presente ley, dentro de los tres (3) meses siguientes a su promulgación, y su incumplimiento será sancionado administrativamente por el Código Sustantivo del Trabajo. El empleador deberá abrir un escenario para escuchar las opiniones de los trabajadores en la adaptación de que trata este parágrafo, sin que tales opiniones sean obligatorias y sin que eliminen el poder de subordinación laboral. PARÁGRAFO 2. La omisión en la adopción de medidas preventivas y correctivas de la situación de acoso laboral por parte del empleador o jefes superiores de la administración, se entenderá como tolerancia de la misma. PARÁGRAFO 3. La denuncia a que se refiere el numeral 2 de este artículo podrá acompañarse de la solicitud de traslado a otra dependencia de la misma empresa, si existiera una opción clara en ese sentido, y será sugerida por la autoridad competente como medida correctiva cuando ello fuere posible.',
+    temas: [
+      'que debe tener el reglamento de trabajo',
+      'como prevengo el acoso',
+      'procedimiento interno',
+      'donde denuncio',
+      'inspector de trabajo',
+      'obligaciones del empleador',
+      'si no hago nada que pasa',
+      'conciliacion',
+    ],
+  },
+  {
+    norma: NORMA,
+    articulo: '10',
+    titulo: 'Tratamiento sancionatorio al acoso laboral',
+    texto:
+      'El acoso laboral, cuando estuviere debidamente acreditado, se sancionará así: 1. Como falta disciplinaria gravísima en el Código Disciplinario Único, cuando su autor sea un servidor público. 2. Como terminación del contrato de trabajo sin justa causa, cuando haya dado lugar a la renuncia o el abandono del trabajo por parte del trabajador regido por el Código Sustantivo del Trabajo. En tal caso procede la indemnización en los términos del artículo 64 del Código Sustantivo del Trabajo. 3. Con sanción de multa entre dos (2) y diez (10) salarios mínimos legales mensuales para la persona que lo realice y para el empleador que lo tolere. 4. Con la obligación de pagar a las Empresas Prestadoras de Salud y las Aseguradoras de riesgos profesionales el cincuenta por ciento (50%) del costo del tratamiento de enfermedades profesionales, alteraciones de salud y demás secuelas originadas en el acoso laboral. Esta obligación corre por cuenta del empleador que haya ocasionado el acoso laboral o lo haya tolerado, sin perjuicio a la atención oportuna y debida al trabajador afectado antes de que la autoridad competente dictamine si su enfermedad ha sido como consecuencia del acoso laboral, y sin perjuicio de las demás acciones consagradas en las normas de seguridad social para las entidades administradoras frente a los empleadores. 5. Con la presunción de justa causa de terminación del contrato de trabajo por parte del trabajador, particular y exoneración del pago de preaviso en caso de renuncia o retiro del trabajo. 6. Como justa causa de terminación o no renovación del contrato de trabajo, según la gravedad de los hechos, cuando el acoso laboral sea ejercido por un compañero de trabajo o un subalterno. PARÁGRAFO 1. Los dineros provenientes de las multas impuestas por acoso laboral se destinarán al presupuesto de la entidad pública cuya autoridad la imponga y podrá ser cobrada mediante la jurisdicción coactiva con la debida actualización de valor. …',
+    temas: [
+      'cuanto es la multa por acoso laboral',
+      'sanciones',
+      'que pasa si tolero el acoso',
+      'dos a diez salarios minimos',
+      'indemnizacion',
+      'puedo despedir al acosador',
+      'quien paga el tratamiento medico',
+    ],
+  },
+  {
+    norma: NORMA,
+    articulo: '11',
+    titulo: 'Garantías contra actitudes retaliatorias',
+    texto:
+      'A fin de evitar actos de represalia contra quienes han formulado peticiones, quejas y denuncias de acoso laboral o sirvan de testigos en tales procedimientos, establézcanse las siguientes garantías: 1. La terminación unilateral del contrato de trabajo o la destitución de la víctima del acoso laboral que haya ejercido los procedimientos preventivos, correctivos y sancionatorios consagrados en la presente Ley, carecerán de todo efecto cuando se profieran dentro de los seis (6) meses siguientes a la petición o queja, siempre y cuando la autoridad administrativa, judicial o de control competente verifique la ocurrencia de los hechos puestos en conocimiento. 2. La formulación de denuncia de acoso laboral en una dependencia estatal, podrá provocar el ejercicio del poder preferente a favor del Ministerio Público. En tal caso, la competencia disciplinaria contra el denunciante sólo podrá ser ejercida por dicho órgano de control mientras se decida la acción laboral en la que se discuta tal situación. Esta garantía no operará cuando el denunciado sea un funcionario de la Rama Judicial. 3. Las demás que le otorguen la Constitución, la ley y las convenciones colectivas de trabajo y los pactos colectivos. Las anteriores garantías cobijarán también a quienes hayan servido como testigos en los procedimientos disciplinarios y administrativos de que trata la presente ley. PARÁGRAFO. La garantía de que trata el numeral uno no regirá para los despidos autorizados por el Ministerio de la Protección Social conforme a las leyes, para las sanciones disciplinarias que imponga el Ministerio Público o las Salas Disciplinarias de los Consejos Superiores o Seccionales de la Judicatura, ni para las sanciones disciplinarias que se dicten como consecuencia de procesos iniciados antes de la denuncia o queja de acoso laboral.',
+    temas: [
+      'que pasa si denuncio',
+      'me pueden despedir por denunciar',
+      'represalias',
+      'proteccion al denunciante',
+      'seis meses despues de la queja',
+      'proteccion a los testigos',
+    ],
+  },
+  {
+    norma: NORMA,
+    articulo: '12',
+    titulo: 'Competencia',
+    texto:
+      'Corresponde a los jueces de trabajo con jurisdicción en el lugar de los hechos adoptar las medidas sancionatorias que prevé el artículo 10 de la presente Ley, cuando las víctimas del acoso sean trabajadores o empleados particulares. Cuando la víctima del acoso laboral sea un servidor público, la competencia para conocer de la falta disciplinaria corresponde al Ministerio Público o a las Salas Jurisdiccional Disciplinaria de los Consejos Superior y Seccionales de la Judicatura, conforme a las competencias que señala la ley.',
+    temas: [
+      'quien sanciona el acoso laboral',
+      'a quien le reclamo',
+      'juez laboral',
+      'donde se demanda',
+      'autoridad competente',
+    ],
+  },
+  {
+    norma: NORMA,
+    articulo: '13',
+    titulo: 'Procedimiento sancionatorio',
+    texto:
+      'Para la imposición de las sanciones de que trata la presente Ley se seguirá el siguiente procedimiento: Cuando la competencia para la sanción correspondiere al Ministerio Público se aplicará el procedimiento previsto en el Código Disciplinario único. Cuando la sanción fuere de competencia de los Jueces del Trabajo se citará a audiencia, la cual tendrá lugar dentro de los treinta (30) días siguientes a la presentación de la solicitud o queja. De la iniciación del procedimiento se notificará personalmente al acusado de acoso laboral y al empleador que lo haya tolerado, dentro de los cinco (5) días siguientes al recibo de la solicitud o queja. Las pruebas se practicarán antes de la audiencia o dentro de ella. La decisión se proferirá al finalizar la audiencia, a la cual solo podrán asistir las partes y los testigos o peritos. Contra la sentencia que ponga fin a esta actuación procederá el recurso de apelación, que se decidirá en los treinta (30) días siguientes a su interposición. En todo lo no previsto en este artículo se aplicará el Código Procesal del Trabajo.',
+    temas: [
+      'como es el proceso',
+      'cuanto se demora',
+      'audiencia',
+      'me notifican',
+      'puedo apelar',
+      'como denuncio',
+    ],
+  },
+  {
+    norma: NORMA,
+    articulo: '14',
+    titulo: 'Temeridad de la queja de acoso laboral',
+    texto:
+      'Cuando, a juicio del Ministerio Público o del juez laboral competente, la queja de acoso laboral carezca de todo fundamento fáctico o razonable, se impondrá a quien la formuló una sanción de multa entre medio y tres salarios mínimos legales mensuales. Igual sanción se impondrá a quien formule más de una denuncia o queja de acoso laboral con base en los mismos hechos. Los dineros recaudados por tales multas se destinarán a la entidad pública a que pertenece la autoridad que la impuso.',
+    temas: [
+      'denuncia falsa',
+      'me denunciaron sin razon',
+      'queja sin fundamento',
+      'multa al que denuncia en falso',
+      'denuncias repetidas',
+    ],
+  },
+  {
+    norma: NORMA,
+    articulo: '18',
+    titulo: 'Caducidad',
+    texto:
+      'Las acciones derivadas del acoso laboral caducarán en tres (3) años a partir de la fecha en que hayan ocurrido las conductas a que hace referencia esta ley.',
+    temas: [
+      'cuanto tiempo tengo para denunciar',
+      'caducidad',
+      'plazo para reclamar',
+      'tres anos',
+      'se me vencio el tiempo',
+    ],
+  },
+]

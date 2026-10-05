@@ -1,0 +1,45 @@
+{
+  "name": "escudo-laboral",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "evals": "tsx evals/correr.ts",
+    "evals:ranking": "tsx evals/ranking.ts",
+    "evals:rapido": "tsx evals/correr.ts --rapido",
+    "evals:control": "tsx evals/control.ts",
+    "evals:seguridad": "tsx evals/seguridad.ts",
+    "evals:limite": "tsx evals/limite.ts",
+    "evals:citas": "tsx evals/citas.ts",
+    "evals:autoevaluacion": "tsx evals/autoevaluacion.ts",
+    "evals:blog": "tsx evals/blog.ts",
+    "evals:calendario": "tsx evals/calendario.ts",
+    "evals:plantillas": "tsx evals/plantillas.ts",
+    "evals:formato": "tsx evals/formato-normas.ts"
+  },
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1",
+    "docx": "^9.7.1",
+    "framer-motion": "^12.34.0",
+    "lucide-react": "^0.564.0",
+    "next": "16.1.6",
+    "openai": "^7.15.0",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "resend": "^6.27.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.1.6",
+    "tailwindcss": "^4",
+    "tsx": "^4.23.13",
+    "typescript": "^5"
+  }
+}
